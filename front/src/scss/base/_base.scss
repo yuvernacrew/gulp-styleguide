@@ -1,0 +1,51 @@
+html,
+body {
+  font-family: 'メイリオ', Meiryo;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+}
+
+input,
+label,
+select {
+  cursor: pointer;
+}
+
+li {
+  display: inline-block;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+  }
+}

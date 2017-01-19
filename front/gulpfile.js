@@ -54,6 +54,7 @@ gulp.task('img', function(){
 gulp.task('guide',function(){
   gulp.src(SCSS_SRC)
     .pipe(frontNote({
+      //どこにかきだすか
       out: '../guide'
     }))
 })
