@@ -1,0 +1,27 @@
+/*
+#overview
+heading
+
+@depulicated
+```
+<h1 class='main-title'>サンプル</h1>
+<h2 class='sub-title'>サンプル</h2>
+```
+*/
+
+.main-title {
+  font-size: 3em;
+  text-shadow: 0 0 5px $light-color;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+.sub-title {
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.bg{
+  background-color: black;
+}
