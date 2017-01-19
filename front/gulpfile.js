@@ -1,31 +1,21 @@
-//プラグインの読み込み
-var gulp = require('gulp'); //gulp
-var sass = require('gulp-sass'); //sassをコンパイル
-var postcss = require('gulp-postcss');
-var cssnext = require('postcss-cssnext'); //ブラウザ対応
-var imagemin = require("gulp-imagemin")//画像圧縮
+//使うパッケージを管理
+var gulp = require('gulp');//gulpを入れる
+var sass = require('gulp-sass');//sassをコンパイルするパッケージ
+const sassLint = require('gulp-sass-lint');//sass-lint
 
-var paths = {
-  'scss': 'src/scss/',
-  'css': '../dist/css/'
-}
-
-//gulpのタスク
-gulp.task('default', function () {
-
-  return gulp.watch('*.scss',['css']);
+//task
+//default(gulpって打ったときの処理)
+gulp.task('default', function(){
+  //監視するタスク
+  gulp.watch('./src/scss/**/*.scss', ['style']);
 });
 
-gulp.task('css', function () {
-    return gulp.src('*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('../dest/css'));
-});
-
-//まじむり
-gulp.task("imageMinTask", function() {
-  // imagesフォルダー以下のpng画像を取得
-  gulp.src("images/*.png")
-    .pipe(imagemin()) // 画像の圧縮処理を実行
-    .pipe(gulp.dest("minified_images/")); // minified_imagesフォルダー以下に保存
+//sassを手動でコンパイル
+gulp.task('style', function(){
+  gulp.src(['./src/scss/**/*.scss'])//コンパイルするファイルを指定
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+    .pipe(sass())// sassをcssにコンパイル
+    .pipe(gulp.dest('../dist/css')) //吐き出す場所を指定
 });
