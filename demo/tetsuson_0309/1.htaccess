@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile http://doiasami.net/tetsuson_0308/.htaccess
+AuthName "auth"
+require valid-user

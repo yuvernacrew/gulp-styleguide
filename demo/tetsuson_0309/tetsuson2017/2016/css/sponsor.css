@@ -1,0 +1,85 @@
+footer{
+	position: relative;
+}
+
+article{
+	min-width: 1200px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+section{
+	border-top: 2px #c0c0c0 solid;
+	border-bottom: 2px #c0c0c0 solid;
+}
+
+section h2{
+	margin: 60px 0 20px 0;
+}
+
+section#sponsor ul li{
+	width: 260px;
+	height: 70px;
+	margin: 10px auto;
+}
+
+section#sponsor ul li img{
+	width: 100%;
+	height: 100%;
+}
+
+section#sponsor ul.link{
+	width: 810px;
+	margin: 0 auto 60px auto;
+}
+
+section#sponsor ul.link li{
+	float: left;
+	margin: 10px;
+}
+
+
+section#guide{
+	background-color: #96dbf6;
+	text-align: left;
+}
+
+section#guide div#g_inner{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+section#guide h3,section#guide p{
+	color: black;
+	text-decoration: none;
+}
+
+section#guide h3{
+	display: inline-block;
+	height: 30px;
+	border: 1px black solid;
+	padding: 0 20px;
+	margin: 30px auto;
+}
+
+section#guide ul{
+	margin-left: 180px;
+}
+
+section#guide ul li:not(:last-child){
+	font-weight: bold;
+}
+
+section#guide span{
+	font-size: 12px;
+}
+
+section#guide p, section#guide a{
+	margin-left: 60px;
+}
+
+
+section#guide img#topback{
+	display: block;
+	margin: 60px auto;
+}

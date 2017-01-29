@@ -1,0 +1,184 @@
+body{
+	overflow: scroll;
+}
+
+article{
+	min-width: 1200px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+section{
+	border-top: 2px #c0c0c0 solid;
+	border-bottom: 2px #c0c0c0 solid;
+}
+
+
+img#mainimage{
+	max-width: 1700px;
+	width: 100%;
+	height: auto;
+}
+
+/*ul.slick{
+	position: relative;
+}
+
+img#mainvisual_bosyu{
+	position: absolute;
+	width: 250px;
+	right: 130px;
+	top: 7%;
+}
+*/
+section{
+	width: auto;
+	padding-top: 30px;
+}
+
+section#activities{
+	height: 470px;
+}
+
+section#activities p{
+	margin: 20px auto;
+}
+
+div#timeline{
+	margin: 0 auto;
+	width: 880px;
+	height: 290px;
+}
+
+iframe{
+	float: left;
+	margin: 0px 10px;
+}
+
+div.fb-page{
+	width: 440px;
+	height: 290px;
+	float: left;
+	margin: 0 auto;
+}
+
+
+section#theme{
+	height: 400px;
+	background-color: #16438f;
+	position: relative;
+	z-index: 50;
+	/*overflow: hidden;*/
+}
+
+section#theme h1{
+	position: absolute;
+	top: 120px;
+	left: 120px;
+}
+
+img#theme_back{
+	position: absolute;
+	top: 0px;
+	left: -90px;
+}
+
+section#theme h2{
+	position: absolute;
+	top: 50px;
+	left: 47%;
+}
+
+section#theme p{
+	position: absolute;
+	top: 125px;
+	left: 43%;
+	color: white;
+	text-align: left;
+}
+
+
+
+section#schedule{
+	height: 300px;
+	background-color: #96dbf6;
+	z-index: 51;
+	/*overflow: hidden;*/
+}
+
+section#schedule p{
+	margin: 20px 0 20px 0;
+}
+
+
+section#exhibitor{
+	height: 960px;
+	z-index: 52;
+	/*overflow: hidden;*/
+}
+
+section#exhibitor p{
+	margin: 35px 0 20px 0; 
+}
+
+section#exhibitor ul{
+	width: 910px;
+	margin: 0 auto;
+}
+
+section#exhibitor ul li{
+	float: left;
+	width: 120px;
+	height: 120px;
+	margin: 5px;
+}
+
+section#exhibitor ul li a, section#exhibitor ul li a img{
+	width: 100%;
+	height: 100%;
+}
+
+
+section#photo{
+	height: 320px;
+	background-color: #16438f;
+	z-index: 53;
+	/*overflow: hidden;*/
+}
+
+section#photo p{
+	color: white;
+	margin-top: 20px;
+}
+
+section#photo ul li{
+	width: 200px;
+	height: 150px;
+	background-color: gray;
+	margin: 35px 10px 0 10px;
+}
+
+section#photo ul li img{
+	width: 100%;
+	height: 100%;
+}
+
+
+section#contact{
+	height: 380px;
+	z-index: 54;
+	/*overflow: hidden;*/
+}
+
+section#contact p{
+	margin: 20px 0 20px 0;
+}
+
+section#contact a{
+	display: block;
+}
+
+a#topback{
+	margin-top: 50px;
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
+<title>CONTACT | TETSUSON2016</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../css/screen.css">
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/base.js"></script>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<style type="text/css">
+footer{
+  position: relative;
+}
+
+article{
+  border-top: 4px #c0c0c0 solid;
+  min-width: 1200px;
+  margin-top: 100px;
+}
+#formWrap {
+	width:1100px;
+	margin:0 auto;
+	color:#555;
+	line-height:120%;
+	font-size:90%;
+}
+h1, h2{
+  text-align: center;
+}
+h2{
+  margin: 20px 0 60px 0;
+}
+table, tbody, thead, tfoot, tr, th, td {
+    display: block;
+}
+table.formTable, table.formTable input, table.formTable textarea{
+	width:100%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+table.formTable th{
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+}
+p#button{
+  margin-bottom: 50px;
+}
+p#button input, p#input a img{
+  display: block;
+  margin: 50px auto;
+}
+input#kakunin{
+  background-image: url("../img/05-3_button_kakunin.png");
+  width:340px;
+  height:80px;
+  border:none;
+  text-indent:-9999px;
+  display:block;
+  background-color: white;
+}
+input#kakunin:hover{
+  background-image: url("../img/05-3_button_kakunin_hover.png");
+}
+</style>
+</head>
+<body>
+<header class="clearfix">
+    <div id="inner">
+    <h1><img src="../img/00_menu_logo.png" alt="TETSUSON"></h1>
+    <nav>
+      <ul class="clearfix">
+        <li><a href="../../index.html"><img src="../img/00_menu_top.png" alt="top"></a></li>
+        <li><a href="../html/about.html"><img src="../img/00_menu_about.png" alt="about"></a></li>
+        <li><a href="../html/event.html"><img src="../img/00_menu_event.png" alt="event"></a></li>
+        <li><a href="../html/sponsor.html"><img src="../img/00_menu_sponsor.png" alt="sponsor"></a></li>
+        <li><a href="../html/entry.html"><img src="../img/00_menu_entry.png" alt="entry"></a></li>
+      </ul>
+    </nav>
+    </div>
+</header>
+
+<article>
+<div id="formWrap">
+  <h1><img src="../img/05_h1.png" alt="entry"></h1>
+  <h2><img src="../img/05-3_h2.png" alt=""></h2>
+  <form method="post" action="mail.php">
+    <table class="formTable">
+      <tr>
+        <th>氏名</th>
+        <td><input size="20" type="text" name="氏名" placeholder="Name"/></td>
+      </tr>
+      <tr>
+        <th>ローマ字表記</th>
+        <td><input size="30" type="text" name="ローマ字表記" placeholder="Romaji"/></td>
+      </tr>
+      <tr>
+        <th>学校名・学部・学科（専攻）</th>
+        <td><input size="30" type="text" name="学校名・学部・学科（専攻）" placeholder="School"/></td>
+      </tr>
+      <tr>
+        <th>学年</th>
+        <td><input size="30" type="text" name="学年" placeholder="Grade"/></td>
+      </tr>
+      <tr>
+        <th>メールアドレス（PC/pdfなどの添付ファイルを受け取れるもの）</th>
+        <td><input size="30" type="text" name="メールアドレス（PC/pdfなどの添付ファイルを受け取れるもの）" placeholder="Enter email"/></td>
+      </tr>
+      <tr>
+        <th>メールアドレス（携帯/すぐに連絡が取れるもの）</th>
+        <td><input size="30" type="text" name="メールアドレス（携帯/すぐに連絡が取れるもの）" placeholder="Enter email"/></td>
+      </tr>
+      <tr>
+        <th>電話番号（すぐに連絡の取れるもの）</th>
+        <td><input size="30" type="text" name="電話番号（すぐに連絡の取れるもの）"/></td>
+      </tr>
+      <tr>
+        <th>住所</th>
+        <td><textarea name="住所" cols="50" rows="2"></textarea></td>
+      </tr>
+      <tr>
+        <th>TETSUSONをどのように知りましたか？</th>
+        <td><textarea name="TETSUSONをどのように知りましたか？" cols="50" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <th>作りたい作品の概要・作品の展示に必要なスペース<br>（幅×奥行き×高さ）の目安などお決まりでしたら以下にご記入ください</th>
+        <td><textarea name="作りたい作品の概要・作品の展示に必要なスペース" cols="50" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <th>その他</th>
+        <td><textarea name="その他" cols="50" rows="5"></textarea></td>
+      </tr>
+    </table>
+    <div class="btn-box" lign="center" id="button">
+      <input type="submit" alt="確認" id="kakunin" />
+      <a class="entry-btn" href="#"><img src="../img/00_topback.png" alt="" id="topback"></a>
+    </div>
+  </form>
+</div>
+</article>
+
+<footer class="clearfix">
+  <div class="footer_repeat"></div>
+  <div id="footer_center"></div>
+  <div class="footer_repeat"></div>
+</footer>
+
+</body>
+</html>
